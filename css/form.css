@@ -17,6 +17,7 @@ select.fordform {
 
 input:focus-visible {
     outline: none;
+    
 }
 
 select:focus-visible {
@@ -34,6 +35,7 @@ main div {
 .forms {
     display: block;
     text-align: center;
+   
 }
 
 h2 {
@@ -47,8 +49,34 @@ button {
     height: 40px;
     margin-right: 8px;
     float: right;
+
+    
 }
 
 .titulo {
     margin-left: 8px;
+}
+
+
+/*----- MODIFICAÇÕES DO FORMULÁRIO E BOTÕES -----*/
+
+#formid input:hover, 
+#formid select:hover,
+#formid input:focus,
+#formid select:focus {
+  
+  border-color: #004a9e;
+  box-shadow: 0 0 8px rgba(0, 74, 158, 0.4);
+}
+
+
+#formid button[type="submit"] {
+  
+  transition: transform 0.5s ease-in-out;
+}
+
+
+#formid button[type="submit"]:hover {
+  
+  transform: scale(1.05);
 }
